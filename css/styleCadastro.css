@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #00539b; /* Cor da Estácio */
+    padding: 20px 0;
+    border-bottom: 3px solid #002d72; /* Cor da Estácio */
+}
+
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.btn-linguagem {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    padding: 4px;
+    border-radius: 5px;
+    padding-right: 10px;
+    color: #ffffff;
+}
+
+.btn-linguagem img {
+    margin-right: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #00539b; /* Cor da Estácio */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00539b; /* Cor da Estácio */
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #002d72; /* Cor da Estácio */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #002d72; /* Cor da Estácio */
+}
+
+.container-form {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.container-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00539b; /* Cor da Estácio */
+}
+
+.container-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.container-form input,
+.container-form select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container-form input[type="submit"] {
+    background-color: #00539b; /* Cor da Estácio */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.container-form input[type="submit"]:hover {
+    background-color: #002d72; /* Cor da Estácio */
+}
+
+.termo {
+    display: flex;
+    align-items: center;
+}
+
+.termo input {
+    margin-right: 10px;
+}
+
+.termo label {
+    font-size: 14px;
+}
+
+.termo a {
+    color: #00539b; /* Cor da Estácio */
+    text-decoration: none;
+}
+
+.termo a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #00539b; /* Cor da Estácio */
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,290 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Menu */
+header {
+    background-color: #005baa; /* Azul Estácio */
+    padding: 10px 0;
+    border-bottom: 1px solid #004080; /* Azul mais escuro */
+    height: 120px;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.btn-linguagem {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    padding: 4px;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+.btn-linguagem img {
+    margin-right: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #005baa;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #005baa;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #004080;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #004080;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.menu a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Amarelo Estácio */
+}
+
+/* Banner */
+.container-banner {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #e5f3ff; /* Azul claro */
+}
+
+.container-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-assinatura {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container-assinatura h1 {
+    font-size: 36px;
+    color: #005baa;
+    margin-bottom: 40px;
+}
+
+.container-assinatura-itens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container-assinatura-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container-assinatura-item h2 {
+    font-size: 24px;
+    color: #005baa;
+    margin-bottom: 10px;
+}
+
+.container-assinatura-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.botao-assinar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #005baa;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.botao-assinar:hover {
+    background-color: #004080;
+}
+
+.container-novidades {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #e5f3ff;
+}
+
+.container-novidades h1 {
+    font-size: 36px;
+    color: #005baa;
+    margin-bottom: 40px;
+}
+
+.novidades-itens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.novidade-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.novidade-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.novidade-item p {
+    font-size: 16px;
+    color: #333333;
+}
+
+.container-email {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #005baa;
+}
+
+
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #ffcc00;
+    color: #005baa;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.search-bar button:hover {
+    background-color: #ffdd33;
+}
+
+footer {
+    background-color: #e5f3ff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #004080;
+    border: #004080 1px solid;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}

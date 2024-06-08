@@ -1,0 +1,216 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Estilos do header */
+header {
+    background-color: #000;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+/* Estilos do menu lateral */
+.sidebar {
+    background-color: #000;
+    float: left;
+    width: 250px;
+    padding: 20px;
+    height: calc(100vh - 100px);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #555;
+    font-weight: bold;
+}
+
+/* Estilos do conteúdo principal */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    background-color: #fff;
+    min-height: calc(100vh - 140px);
+}
+
+.content section {
+    display: none;
+}
+
+/* Estilos para exibir a seção ativa */
+.content section:target {
+    display: block;
+}
+
+/* Estilos dos formulários */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="file"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+/* Estilos adicionais para o QR Code do PIX */
+#qr-code-container {
+    text-align: center;
+}
+
+#qr-code-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para prévia da imagem de perfil */
+#profile-picture-preview {
+    display: block;
+    max-width: 150px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos do footer */
+footer {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid #004080;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilos de mensagem de confirmação */
+.confirmation-message {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+/* Estilos adicionais para o QR Code do PIX */
+#qr-code-container {
+    text-align: center;
+}
+
+#qr-code-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}

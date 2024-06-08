@@ -1,0 +1,432 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #141414;
+    color: #ffffff;
+}
+
+/* CSS para o modo claro */
+body.light-mode {
+    background-color: #e5f3ff;
+    color: #000;
+}
+
+body.light-mode .dropbtn{
+    background-color: transparent;
+    color: #000;
+}
+
+body.light-mode .dropdown-content{
+    background-color: #ffcc00;
+}
+
+body.light-mode .dropdown-content a{
+    color: #000000;
+}
+
+body.light-mode .dropdown-content a:hover{
+    background-color: #005baa;
+}
+
+    body.light-mode .div.dropdown:hover{
+    background-color: #005baa;
+}
+
+body.light-mode .categorias{
+    background-color: #ffcc00;
+    color: #000;
+}
+
+body.light-mode .categorias ul li a{
+    color: #000;
+}
+
+body.light-mode .categorias ul li a.active,
+body.light-mode .categorias ul li a:hover{
+    background-color: #005baa;
+}
+
+/* Alterando as cores das fontes no header para o modo claro */
+body.light-mode .container-menu {
+    background-color: #e5f3ff;
+}
+
+
+
+body.light-mode .menu a,
+body.light-mode .btn-linguagem img,
+body.light-mode .hero-content,
+body.light-mode .btn-linguagem .dropbtn{
+    color: #000;
+}
+
+
+
+/* CSS para o botão de alternância de tema */
+.toggle-theme {
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-theme .fa-sun {
+    display: none;
+}
+
+body.light-mode .toggle-theme .fa-moon {
+    display: none;
+}
+
+body.light-mode .toggle-theme .fa-sun {
+    display: inline;
+}
+
+/* Animação de rotação */
+.rotate {
+    animation: rotation 0.5s ease-in-out;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px 50px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.btn-linguagem {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    padding: 4px;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+.btn-linguagem img {
+    margin-right: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #333333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #333333;
+}
+
+.hero {
+    background: url('img/hero-background.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.category {
+    padding: 40px 20px;
+}
+
+.category h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* menu de categorias */
+/* Estilo para a seção de categorias */
+.categorias {
+    background-color: #000000; /* Cor de fundo */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+/* Estilo para a lista de categorias */
+.categorias ul {
+    list-style-type: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover espaçamento interno */
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Alinhar os itens no centro horizontalmente */
+    flex-wrap: wrap; /* Permitir que os itens quebrem para a próxima linha */
+}
+
+/* Estilo para cada item da lista de categorias */
+.categorias ul li {
+    margin: 5px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para os links das categorias */
+.categorias ul li a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #333; /* Cor do texto */
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 3px; /* Borda arredondada */
+    transition: background-color 0.3s; /* Transição suave de cor de fundo */
+}
+
+/* Estilo para os links das categorias quando estão ativos */
+.categorias ul li a.active,
+.categorias ul li a:hover {
+    background-color: #ddd; /* Cor de fundo quando ativo ou hover */
+}
+
+
+/*fim menu de categorias*/
+
+
+
+/* Estilos do carousel */
+.carousel {
+    margin-bottom: 20px;
+}
+
+.carousel-title {
+    font-size: 20px;
+}
+
+.carousel-movies {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.carousel-movie {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.carousel-movie img {
+    width: 200px;
+    height: auto;
+}
+
+/* Estilos dos cards de filme */
+.streaming-card {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.streaming-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.streaming-card p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.streaming-card video {
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+    display: none;
+}
+
+.cards {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.card {
+    background-color: #1c1c1c;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.categories {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.categories a {
+    color: #ffffff;
+    background-color: #00539b;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.categories a:hover {
+    background-color: #003f7f;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 768px) {
+    .container-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .category h2 {
+        font-size: 20px;
+    }
+
+    .card {
+        min-width: 150px;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+}
